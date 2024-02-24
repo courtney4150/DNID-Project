@@ -8,12 +8,6 @@ public class DorothyController : MonoBehaviour
     private Vector2 newPos;
     private float x, y;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
