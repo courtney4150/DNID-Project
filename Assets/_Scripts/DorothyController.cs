@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DorothyController : MonoBehaviour
 {
     public float speed;
     private Vector2 newPos;
     private float x, y;
+    
 
     // Update is called once per frame
     void Update()
@@ -23,5 +26,16 @@ public class DorothyController : MonoBehaviour
             y = gameObject.transform.position.y;
             newPos = new Vector2(x, y);
             gameObject.transform.position = newPos;
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.name == "crap")
+        {
+            SceneManager.LoadScene("level2");
+        }
+
+        
     }
 }

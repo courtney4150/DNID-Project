@@ -10,6 +10,7 @@ public class TornadoController : MonoBehaviour
     public float timeElapsed;
     public GameObject flyingObjectPrefab1;
     public GameObject flyingObjectPrefab2;
+    public GameObject flyingObjectPrefab3;
 
     // Update is called once per frame
     void Update()
@@ -26,7 +27,7 @@ public class TornadoController : MonoBehaviour
 
         timeElapsed += Time.deltaTime;
         float triggerTime = Random.Range(2, 6);
-        float objectNum = Random.Range(1, 3);
+        float objectNum = Random.Range(1, 4);
 
         if (timeElapsed >= triggerTime)
         {
@@ -38,6 +39,11 @@ public class TornadoController : MonoBehaviour
             else if (objectNum == 2)
             {
                 Instantiate(flyingObjectPrefab2, gameObject.transform.position, Quaternion.identity);
+            }
+
+            else if (objectNum == 3)
+            {
+                Instantiate(flyingObjectPrefab3, gameObject.transform.position, Quaternion.identity);
             }
             
             timeElapsed = 0;
