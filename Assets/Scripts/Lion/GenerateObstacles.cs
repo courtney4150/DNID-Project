@@ -18,15 +18,12 @@ public class GenerateObstacles : MonoBehaviour
 
         float triggerTime = Random.Range(1, 10);
 
-        if (timeElapsed >= triggerTime)
+        if (timeElapsed >= triggerTime && gameTimeElapsed <= 10)
         {
             Instantiate(obstacle, gameObject.transform.position, Quaternion.identity);
             timeElapsed = 0;
         }
 
-        if (gameTimeElapsed >= 10)
-        {
-            Instantiate(finishLine, gameObject.transform.position, Quaternion.identity);
-        }
+        
     }
 }

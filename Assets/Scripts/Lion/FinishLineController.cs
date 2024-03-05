@@ -9,25 +9,25 @@ public class FinishLineController : MonoBehaviour
     private float x, y;
     public float speed;
     public float timeElapsed;
+    public float gameTimeElapsed;
 
     // Update is called once per frame
     void Update()
     {
-        x = gameObject.transform.position.x - (speed * Time.deltaTime);
-        y = gameObject.transform.position.y;
-        newPos = new Vector2(x, y);
-        gameObject.transform.position = newPos;
-
+        if (gameTimeElapsed >= 10)
+        {
+            x = gameObject.transform.position.x - (speed * Time.deltaTime);
+            y = gameObject.transform.position.y;
+            newPos = new Vector2(x, y);
+            gameObject.transform.position = newPos;
+        }
+        
         timeElapsed += Time.deltaTime;
+        gameTimeElapsed += Time.deltaTime;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "redSquare")
-        {
-            Destroy(gameObject);
-        }
-
         if (collision.gameObject.name == "LionSprite")
         {
             SceneManager.LoadScene("home");
