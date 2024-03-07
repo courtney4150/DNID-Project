@@ -17,7 +17,7 @@ public class GroundController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         score++;
-        scoreText.SetText("Score: " + score);
+        scoreText.SetText("Score: " + score + "/20");
 
         if (score >= 20)
         {
