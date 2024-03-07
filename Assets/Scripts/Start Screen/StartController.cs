@@ -5,11 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class StartController : MonoBehaviour
 {
-    int n;
     public void OnButtonPress()
     {
-        n++;
-        Debug.Log("Button clicked " + n + " times.");
         SceneManager.LoadScene("Level1");
     }
 

@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b6cdc6482fa64798947909b72c11482, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 8
   timeElapsed: 0
   flyingObjectPrefab1: {fileID: 1668307695}
   flyingObjectPrefab2: {fileID: 790099200}
