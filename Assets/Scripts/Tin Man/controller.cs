@@ -4,50 +4,49 @@ using UnityEngine;
 
 public class controller : MonoBehaviour
 {
-    private float horizontal;
-    private float speed = 8f;
-    private float jumpingPower = 16f;
-    private bool isFacingRight = true;
+	private Rigidbody2D rb2D;
+	private float moveSpeed; 
+	private float jumpForce; 
+	private bool isJumping;
+	private float moveHorizontal; 
+	private float moveVertcial;
 
-    [SerializeField] private Rigidbody2D rb;
-    [SerializeField] private Transform groundCheck;
-    [SerializeField] private LayerMask groundLayer;
+	void Start(){
+		rb2D = gameObject.GetComponent<Rigidbody2D>();
+		moveSpeed = 100f; 
+		jumpForce = 1500f; 
+		isJumping = false; 
+	}
+	
+	
+	void Update(){
+		moveHorizontal = Input.GetAxisRaw("Horizontal");
+		moveVertcial = Input.GetAxisRaw("Vertical");
 
-    void Update()
-    {
-        horizontal = Input.GetAxisRaw("Horizontal");
+	}
 
-        if (Input.GetButtonDown("Jump") && IsGrounded())
-        {
-            rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
-        }
+	void FixedUpdate(){
+		Vector2 velocity = rb2D.velocity;
+    	velocity.x = moveHorizontal * moveSpeed * Time.fixedDeltaTime;
+    	rb2D.velocity = velocity;
+		if(moveHorizontal > 0.1f || moveHorizontal < -0.1f){
+			rb2D.AddForce(new Vector2(moveHorizontal * moveSpeed, 0f));
+		}
 
-        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
-        }
+		if(!isJumping && moveVertcial > 0.1f){
+			rb2D.AddForce(new Vector2(0f, moveVertcial * jumpForce));
+		}	
+	}
 
-        Flip();
-    }
+	void OnTriggerEnter2D(Collider2D collision){
+		if(collision.gameObject.tag == "Platform"){
+			isJumping = false;
+		}
+	}
 
-    private void FixedUpdate()
-    {
-        rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
-    }
-
-    private bool IsGrounded()
-    {
-        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
-    }
-
-    private void Flip()
-    {
-        if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
-        {
-            isFacingRight = !isFacingRight;
-            Vector3 localScale = transform.localScale;
-            localScale.x *= -1f;
-            transform.localScale = localScale;
-        }
-    }
+	void OnTriggerExit2D(Collider2D collision){
+		if(collision.gameObject.tag == "Platform"){
+			isJumping = true;
+		}
+	}
 }
