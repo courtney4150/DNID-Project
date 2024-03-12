@@ -4,16 +4,12 @@ using UnityEngine;
 
 public class CollectHeart : MonoBehaviour
 {
-    private Object thisObject; 
-
-    private void Awake(){
-        thisObject = GetComponent<Object>();
-    }
-
+    private int heart;
     private void OnTriggerEnter2D(Collider2D collision){
-		if(collision.gameObject.CompareTag("PlayerCollider")){
-            Debug.Log("Heart collected!");
-			Destroy(collision.gameObject);
-		}
-	}
+        if(collision.gameObject.name == "TinManSprite"){
+            Debug.Log("You got the heart");
+            Destroy(gameObject);
+            heart++;
+        }Debug.Log("Heart: "+ heart);
+    }
 }

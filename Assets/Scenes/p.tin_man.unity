@@ -700,6 +700,9 @@ GameObject:
   - component: {fileID: 1993347096}
   - component: {fileID: 1993347095}
   - component: {fileID: 1993347097}
+  - component: {fileID: 1993347099}
+  - component: {fileID: 1993347098}
+  - component: {fileID: 1993347100}
   m_Layer: 0
   m_Name: Heart
   m_TagString: Untagged
@@ -809,6 +812,46 @@ CircleCollider2D:
   m_Offset: {x: -0.06505724, y: 1.1460999}
   serializedVersion: 2
   m_Radius: 2.5603683
+--- !u!114 &1993347098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993347092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee002a2c0c732474e87d8317bfec5d0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: 
+--- !u!114 &1993347099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993347092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b4d44464d39e4a6a9d3033f4d726d29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1993347100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993347092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29efb97417ef840739a49d0f81dae376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heartPrefab: {fileID: 0}
+  spawnInterval: 2
+  spawnPoint: {fileID: 0}
 --- !u!1 &2012472134
 GameObject:
   m_ObjectHideFlags: 0
@@ -827,7 +870,7 @@ GameObject:
   - component: {fileID: 2012472141}
   m_Layer: 0
   m_Name: TinManSprite
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
