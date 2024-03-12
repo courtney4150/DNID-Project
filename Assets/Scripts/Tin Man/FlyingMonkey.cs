@@ -25,8 +25,8 @@ public class FlyingMonkey : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D collision){
-        if(collision.gameObject.tag == "Platform"){
-            Debug.Log("womp womp");
+        if(collision.gameObject.name == "TinManSprite"){
+            Debug.Log("destroyed");
             Destroy(gameObject);
         }
     }
