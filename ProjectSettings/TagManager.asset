@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Wall
+  - Key
+  - ScareCrow
+  - Maze
+  - Dorothy
   layers:
   - Default
   - TransparentFX
