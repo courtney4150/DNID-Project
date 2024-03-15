@@ -1120,7 +1120,7 @@ MonoBehaviour:
   - {fileID: 892605575}
   - {fileID: 1524104552}
   - {fileID: 1448941478}
-  secondSpawn: 2
+  secondSpawn: 1
   minTras: -10
   maxTras: 10
   controller: {fileID: 2012472135}
@@ -1922,7 +1922,7 @@ GameObject:
   - component: {fileID: 1288414563}
   m_Layer: 0
   m_Name: Platform
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2033,7 +2033,7 @@ Transform:
   m_GameObject: {fileID: 1288414562}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -384.74, y: -221.19, z: 0}
+  m_LocalPosition: {x: -385.74, y: -221.19, z: 0}
   m_LocalScale: {x: 5.4697666, y: 0.2214, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2342,7 +2342,7 @@ GameObject:
   - component: {fileID: 1561470959}
   m_Layer: 0
   m_Name: TopCollider
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2510,7 +2510,7 @@ GameObject:
   - component: {fileID: 1602698949}
   m_Layer: 5
   m_Name: UI
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3103,7 +3103,7 @@ GameObject:
   - component: {fileID: 1870099932}
   m_Layer: 0
   m_Name: Platform
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3474,8 +3474,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5516d288b7e804b65a974f64885742ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  jumpForce: 500
   health: 3
   maxHealth: 3
 --- !u!212 &2012472136
@@ -3558,9 +3556,9 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 4
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 10
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -3709,8 +3707,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5516d288b7e804b65a974f64885742ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  jumpForce: 500
   health: 3
   maxHealth: 3
 --- !u!114 &2012472145
