@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
-public class controller : MonoBehaviour
+
+public class TinManController : MonoBehaviour
 {
 	private Rigidbody2D rb2D;
 	private float moveSpeed; 
@@ -11,20 +13,29 @@ public class controller : MonoBehaviour
 	private float moveHorizontal; 
 	private float moveVertcial;
 
+	//Life Tracking variables
+	public int health;
+	public int maxHealth = 3;
+
 	void Start(){
+		//Life Tracking
+		health = maxHealth;
+
 		rb2D = gameObject.GetComponent<Rigidbody2D>();
 		moveSpeed = 100f; 
 		jumpForce = 1500f; 
-		isJumping = false; 
+		isJumping = false;
+
+		
+		
 	}
-	
-	
+
 	void Update(){
 		moveHorizontal = Input.GetAxisRaw("Horizontal");
 		moveVertcial = Input.GetAxisRaw("Vertical");
-
 	}
 
+	
 	void FixedUpdate(){
 		Vector2 velocity = rb2D.velocity;
     	velocity.x = moveHorizontal * moveSpeed * Time.fixedDeltaTime;
@@ -41,6 +52,14 @@ public class controller : MonoBehaviour
 	void OnTriggerEnter2D(Collider2D collision){
 		if(collision.gameObject.tag == "Platform"){
 			isJumping = false;
+		}
+	}
+
+	public void TakeDamage(int amount)
+	{
+		health -= amount;
+		if(health <=0){
+			SceneManager.LoadScene("p.tin_man");
 		}
 	}
 

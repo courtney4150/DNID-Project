@@ -4,12 +4,20 @@ using UnityEngine;
 
 public class CollectHeart : MonoBehaviour
 {
-    private int heart;
+    public float minRespawnDelay = 3f;
+    public float maxRespawnDelay = 10f;
+    public HeartManager hm;
     private void OnTriggerEnter2D(Collider2D collision){
         if(collision.gameObject.name == "TinManSprite"){
-            Debug.Log("You got the heart");
-            Destroy(gameObject);
-            heart++;
-        }Debug.Log("Heart: "+ heart);
+            gameObject.SetActive(false);
+            hm.heartCount ++;
+            float respawnDelay = Random.Range(minRespawnDelay, maxRespawnDelay);
+            Invoke("RespawnObject", respawnDelay);
+        }
+    }
+
+    private void RespawnObject()
+    {
+        gameObject.SetActive(true); // Reactivate the object
     }
 }
