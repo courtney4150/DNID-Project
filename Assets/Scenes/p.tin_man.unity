@@ -1113,17 +1113,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 664205287}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 541fcd910e7a44f8cb377d96282339a4, type: 3}
+  m_Script: {fileID: 11500000, guid: 9c86cae90f44747b1baa25fc09a1550d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monkeyPrefab:
-  - {fileID: 892605575}
-  - {fileID: 1524104552}
+  fallingObjectPrefabs:
   - {fileID: 1448941478}
-  secondSpawn: 1
-  minTras: -10
-  maxTras: 10
-  controller: {fileID: 2012472135}
+  - {fileID: 1524104552}
+  - {fileID: 892605575}
+  spawnInterval: 1
 --- !u!4 &664205289
 Transform:
   m_ObjectHideFlags: 0
@@ -1462,13 +1459,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 892605575}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 541fcd910e7a44f8cb377d96282339a4, type: 3}
+  m_Script: {fileID: 11500000, guid: 339a9513c5da74ead9fbcc98e571ab7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monkeyPrefab: []
-  secondSpawn: 0.5
-  minTras: 0
-  maxTras: 0
+  minSpeed: 3
+  maxSpeed: 15
   controller: {fileID: 2012472135}
 --- !u!4 &892605582 stripped
 Transform:
@@ -2217,13 +2212,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1448941478}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 541fcd910e7a44f8cb377d96282339a4, type: 3}
+  m_Script: {fileID: 11500000, guid: e2231d530d9c44628b0f1324ff67bb79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monkeyPrefab: []
-  secondSpawn: 0.5
-  minTras: 0
-  maxTras: 0
+  minSpeed: 3
+  maxSpeed: 15
   controller: {fileID: 2012472135}
 --- !u!4 &1448941485 stripped
 Transform:
@@ -2316,13 +2309,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1524104552}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 541fcd910e7a44f8cb377d96282339a4, type: 3}
+  m_Script: {fileID: 11500000, guid: d845e0157bed44b9bb44dee5ba34e5cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monkeyPrefab: []
-  secondSpawn: 0.5
-  minTras: 0
-  maxTras: 0
+  minSpeed: 3
+  maxSpeed: 15
   controller: {fileID: 2012472135}
 --- !u!4 &1524104559 stripped
 Transform:
@@ -3910,7 +3901,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5084688362368966784, guid: 96147b8de834c41ca89337f8d6f66aa4, type: 3}
       propertyPath: m_Name
-      value: Monkey1
+      value: MonkeyPrefab1
       objectReference: {fileID: 0}
     - target: {fileID: 7028999723351358992, guid: 96147b8de834c41ca89337f8d6f66aa4, type: 3}
       propertyPath: m_Color.b
@@ -3996,7 +3987,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1341678954620594494, guid: e05bc7614145945aea3b28d71165475a, type: 3}
       propertyPath: m_Name
-      value: Monkey2
+      value: MonkeyPrefab2
       objectReference: {fileID: 0}
     - target: {fileID: 4138534861466785613, guid: e05bc7614145945aea3b28d71165475a, type: 3}
       propertyPath: m_Color.b
@@ -4102,7 +4093,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9000335861288809930, guid: 72fe692f03f1a462ca952856223ef7e2, type: 3}
       propertyPath: m_Name
-      value: Monkey3
+      value: MonkeyPrefab3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
