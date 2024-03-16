@@ -23,7 +23,5 @@ public class GenerateObstacles : MonoBehaviour
             Instantiate(obstacle, gameObject.transform.position, Quaternion.identity);
             timeElapsed = 0;
         }
-
-        
     }
 }

@@ -17,7 +17,7 @@ public class LionController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += Vector3.right * speed * Time.deltaTime;
+        // transform.position += Vector3.right * speed * Time.deltaTime;
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
