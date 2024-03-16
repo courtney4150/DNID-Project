@@ -25,7 +25,7 @@ public class MovePlayer : MonoBehaviour
         float verticalInput = Input.GetAxis("Vertical");
 
         // Apply a speed factor to the input axes to slow down the movement
-        float speedFactor = 0.75f; // Adjust this value to control the movement speed
+        float speedFactor = 5; // Adjust this value to control the movement speed
         Vector2 movement = new Vector2(horizontalInput * speedFactor, verticalInput * speedFactor);
 
         // Set the player's velocity based on the modified movement vector
@@ -42,11 +42,12 @@ public class MovePlayer : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Maze"))
-        {
-            StartCoroutine(TeleportToStartingPosition());
-        }
-        else if (collision.gameObject.CompareTag("DorothySprite") && havekey == "y")
+        //Makes player restart if they hit the collider
+        // if (collision.gameObject.CompareTag("Maze"))
+        // {
+        //     StartCoroutine(TeleportToStartingPosition());
+        // }
+        if (collision.gameObject.CompareTag("DorothySprite") && havekey == "y")
         {
             SceneManager.LoadScene("Temporary Transition");
         }

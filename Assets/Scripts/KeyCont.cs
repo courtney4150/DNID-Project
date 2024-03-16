@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+
 using UnityEngine;
+
 
 public class BrainScript : MonoBehaviour
 {
@@ -39,5 +41,6 @@ public class BrainScript : MonoBehaviour
             CollectBrain();
         }
     }
+
 }
 

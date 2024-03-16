@@ -1,13 +1,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class BrainManager : MonoBehaviour
 {
     public Transform mazeResetPoint; // Reset point for brain sprites when ScareCrow hits maze walls
     public GameObject[] brainSprites; // Array of brain sprite GameObjects
     public GameObject endDorothy; // Dorothy sprite GameObject at the end
-
     private List<BrainScript> collectedBrains = new List<BrainScript>();
 
     private void Start()
