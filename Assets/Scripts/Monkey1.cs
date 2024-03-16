@@ -20,7 +20,7 @@ public class Monkey1 : MonoBehaviour
     {
         if(collision.gameObject.name == "TinManSprite"){
             controller.TakeDamage(1);
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 }

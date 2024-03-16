@@ -19,8 +19,8 @@ public class Monkey3 : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.name == "TinManSprite"){
-            Destroy(gameObject);
             controller.TakeDamage(1);
+            gameObject.SetActive(false);
         }
     }
 }
