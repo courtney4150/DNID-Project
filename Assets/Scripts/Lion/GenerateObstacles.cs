@@ -7,7 +7,9 @@ public class GenerateObstacles : MonoBehaviour
     public float speed;
     public float timeElapsed;
     public float gameTimeElapsed;
-    public GameObject obstacle;
+    public GameObject obstacle1;
+    public GameObject obstacle2;
+
     public GameObject finishLine;
 
 
@@ -17,10 +19,19 @@ public class GenerateObstacles : MonoBehaviour
         gameTimeElapsed += Time.deltaTime;
 
         float triggerTime = Random.Range(1, 10);
+        float objectNum = Random.Range(1, 3);
 
         if (timeElapsed >= triggerTime && gameTimeElapsed <= 10)
         {
-            Instantiate(obstacle, gameObject.transform.position, Quaternion.identity);
+            if (objectNum == 1)
+            {
+                Instantiate(obstacle1, gameObject.transform.position, Quaternion.identity);
+            }
+            else if (objectNum == 2)
+            {
+                Instantiate(obstacle2, gameObject.transform.position, Quaternion.identity);
+            }
+
             timeElapsed = 0;
         }
     }
