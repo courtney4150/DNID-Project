@@ -112,7 +112,7 @@ public class BrainManager : MonoBehaviour
         if (numBrainsCollected == 15)
         {
             // Load the scene for reaching Dorothy at the end
-            // SceneManager.LoadScene("Temporary Transition");
+            //SceneManager.LoadScene("Temporary Transition");
             Debug.Log("scene transition");
         }
     }
