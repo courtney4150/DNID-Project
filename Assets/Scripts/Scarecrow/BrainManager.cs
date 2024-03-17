@@ -109,11 +109,14 @@ public class BrainManager : MonoBehaviour
         //Debug.Log(numBrainsCollected);
         brainCountText.SetText("Brains collected: " + numBrainsCollected + "/15");
 
-        if (numBrainsCollected == 15)
+   
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.name == "DorothySprite" && numBrainsCollected == 15)
         {
-            // Load the scene for reaching Dorothy at the end
-            //SceneManager.LoadScene("Temporary Transition");
-            Debug.Log("scene transition");
+            SceneManager.LoadScene("Transition2to3");
         }
     }
 
