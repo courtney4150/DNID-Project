@@ -37,7 +37,7 @@ public class FinishLineController : MonoBehaviour
         if (collision.gameObject.name == "LionSprite")
         {
             Debug.Log("collided with lion");
-            SceneManager.LoadScene("end");
+            SceneManager.LoadScene("Transition4toEC");
         }
     }
 

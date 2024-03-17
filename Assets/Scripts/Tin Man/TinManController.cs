@@ -56,7 +56,7 @@ public class TinManController : MonoBehaviour
 	{
 		health -= amount;
 		if(health <=0){
-			SceneManager.LoadScene("p.tin_man");
+			SceneManager.LoadScene("Level3");
 		}
 	}
 
