@@ -1298,7 +1298,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 838899183}
-  - component: {fileID: 838899184}
   m_Layer: 5
   m_Name: LifeCount
   m_TagString: Untagged
@@ -1328,27 +1327,6 @@ RectTransform:
   m_AnchoredPosition: {x: -312, y: -29}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &838899184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 838899182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ece23ef606bc44dc8bab2e7709b16dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 0
-  maxHealth: 0
-  emptyMan: {fileID: 21300000, guid: 26dfe59a15e88456290155c2f00bdc76, type: 3}
-  fullMan: {fileID: 21300000, guid: 3153ce6d486a942838ad1dd3a770eea7, type: 3}
-  lives:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  tinMan: {fileID: 2012472135}
 --- !u!1 &890136620
 GameObject:
   m_ObjectHideFlags: 0
@@ -1378,7 +1356,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2002851818}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &890136623
@@ -3678,12 +3657,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2002851815}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.000030517578, y: 0.000015258789, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 890136622}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2012472134
 GameObject:
@@ -3958,9 +3937,9 @@ MonoBehaviour:
   emptyMan: {fileID: 21300000, guid: 26dfe59a15e88456290155c2f00bdc76, type: 3}
   fullMan: {fileID: 21300000, guid: 3153ce6d486a942838ad1dd3a770eea7, type: 3}
   lives:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1285172570}
+  - {fileID: 280341652}
+  - {fileID: 541024818}
   tinMan: {fileID: 2012472135}
 --- !u!1 &2134116456
 GameObject:
@@ -4102,6 +4081,5 @@ SceneRoots:
   - {fileID: 1602698952}
   - {fileID: 1578140061}
   - {fileID: 1739025705}
-  - {fileID: 2002851818}
   - {fileID: 890136622}
   - {fileID: 337214796}
