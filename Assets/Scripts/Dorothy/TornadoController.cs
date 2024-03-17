@@ -15,7 +15,7 @@ public class TornadoController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(gameObject.transform.position.x < -10 || gameObject.transform.position.x > 10)
+        if(gameObject.transform.position.x < -9 || gameObject.transform.position.x > 9)
         {
             direction *= -1;
         }
