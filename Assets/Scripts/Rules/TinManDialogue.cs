@@ -9,7 +9,7 @@ public class TinManDialogue : MonoBehaviour
     public TMP_Text tinManDialogue;
     [TextArea]
     [SerializeField] private string[] tinManSentences;
-    [SerializeField] private Gamebject continueButton;
+    [SerializeField] private GameObject continueButton;
     public int tinManIndex;
 
     public void Start(){
@@ -23,7 +23,7 @@ public class TinManDialogue : MonoBehaviour
             yield return new WaitForSeconds(typingSpeed);
         }
 
-        continueButton.SetActive(true)
+        continueButton.SetActive(true);
 
     }
 
