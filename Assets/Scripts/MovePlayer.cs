@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,10 +13,16 @@ public class MovePlayer : MonoBehaviour
 
     private Vector3 startingPosition;
 
+
+    public BrainManager brainManagerRef;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
         startingPosition = transform.position;
+
     }
 
     void Update()
@@ -26,19 +33,23 @@ public class MovePlayer : MonoBehaviour
 
         // Apply a speed factor to the input axes to slow down the movement
         float speedFactor = 5; // Adjust this value to control the movement speed
+
         Vector2 movement = new Vector2(horizontalInput * speedFactor, verticalInput * speedFactor);
 
         // Set the player's velocity based on the modified movement vector
         GetComponent<Rigidbody2D>().velocity = movement;
+
+        
+
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.tag == "key")
-        {
-            havekey = "y";
-        }
-    }
+    //private void OnTriggerEnter2D(Collider2D other)
+    //{
+    //    if (other.tag == "key")
+    //    {
+    //        havekey = "y";
+    //    }
+    //}
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -47,9 +58,12 @@ public class MovePlayer : MonoBehaviour
         // {
         //     StartCoroutine(TeleportToStartingPosition());
         // }
-        if (collision.gameObject.CompareTag("DorothySprite") && havekey == "y")
+
+
+        if (collision.gameObject.name == "DorothySprite" && brainManagerRef.numBrainsCollected == 14)
         {
-            SceneManager.LoadScene("Temporary Transition");
+            //SceneManager.LoadScene("Temporary Transition");
+            Debug.Log("scene transition");
         }
     }
 
