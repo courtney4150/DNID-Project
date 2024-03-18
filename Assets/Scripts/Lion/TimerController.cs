@@ -18,10 +18,8 @@ public class TimerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(Time.deltaTime);
         time_left -= Time.deltaTime;
         timer.SetText(string.Format("{0:00}", Mathf.RoundToInt(time_left)));
-        //Debug.Log("time left is " + time_left);
     }
 
 }

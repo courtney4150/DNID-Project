@@ -59,11 +59,13 @@ public class MovePlayer : MonoBehaviour
         //     StartCoroutine(TeleportToStartingPosition());
         // }
 
+        //Debug.Log(collision.gameObject.name);
 
-        if (collision.gameObject.name == "DorothySprite" && brainManagerRef.numBrainsCollected == 14)
+
+        if (collision.gameObject.name == "DorothySprite" && brainManagerRef.numBrainsCollected == 15)
         {
-            //SceneManager.LoadScene("Temporary Transition");
-            Debug.Log("scene transition");
+            SceneManager.LoadScene("Transition2to3");
+            //Debug.Log("scene transition");
         }
     }
 

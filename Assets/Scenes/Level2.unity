@@ -447,7 +447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   teleportEffectPrefab: {fileID: 0}
-  brainManagerRef: {fileID: 0}
+  brainManagerRef: {fileID: 2121237508}
 --- !u!1 &250561845
 GameObject:
   m_ObjectHideFlags: 0

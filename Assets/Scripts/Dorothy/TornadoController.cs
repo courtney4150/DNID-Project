@@ -45,7 +45,7 @@ public class TornadoController : MonoBehaviour
             {
                 Instantiate(flyingObjectPrefab3, gameObject.transform.position, Quaternion.identity);
             }
-            
+
             timeElapsed = 0;
         }
     }
