@@ -26,4 +26,4 @@ public class DorothyDialogue : MonoBehaviour
         // For example, you could use speechBubble.transform.localPosition to set its position relative to the parent canvas.
     }
 }
-}
+
