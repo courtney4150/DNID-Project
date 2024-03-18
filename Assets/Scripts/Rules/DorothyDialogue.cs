@@ -1,29 +1,43 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class DorothyDialogue : MonoBehaviour
 {
-    public GameObject speechBubblePrefab; // Reference to the speech bubble prefab
+    [SerializeField] private float typingSpeed = 0.05f;
+    public TMP_Text dorothyDialogue;
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "OtherItem")
-        {
-            ShowSpeechBubble();
-        }
+    [TextArea]
+    [SerializeField] private string[] DorothySentences;
+    
+    [SerializeField] private GameObject continueButton;
+
+    public int dorothyIndex;
+
+    public void Start(){
+        StartCoroutine(TypeDorothyDialogue());
     }
 
-    private void ShowSpeechBubble()
+    private IEnumerator TypeDorothyDialogue()
     {
-        // Instantiate the speech bubble prefab
-        GameObject speechBubble = Instantiate(speechBubblePrefab, transform.position, Quaternion.identity);
+        foreach (char letter in DorothySentences[dorothyIndex].ToCharArray())
+        {
+            dorothyDialogue.text += letter;
+            yield return new WaitForSeconds(typingSpeed);
+        }
 
-        // Parent the speech bubble to the canvas or relevant UI container
-        speechBubble.transform.SetParent(GameObject.Find("Canvas").transform, false);
+        continueButton.SetActive(true);
+    }
 
-        // You may need to adjust the position of the speech bubble relative to the colliding object
-        // For example, you could use speechBubble.transform.localPosition to set its position relative to the parent canvas.
+    public void ContinueDialogue()
+    {
+        if(dorothyIndex < DorothySentences.Length - 1)
+        {
+            dorothyIndex++;
+            dorothyDialogue.text = string.Empty;
+            StartCoroutine(TypeDorothyDialogue());
+        }
     }
 }
 
