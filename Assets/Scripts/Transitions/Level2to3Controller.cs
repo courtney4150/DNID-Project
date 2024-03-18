@@ -53,7 +53,7 @@ public class Level2to3Controller: MonoBehaviour
     {
         if (collision.gameObject.name == "Level3Icon")
         {
-            SceneManager.LoadScene("Level3");
+            SceneManager.LoadScene("TinManRules");
         }
     }
 
