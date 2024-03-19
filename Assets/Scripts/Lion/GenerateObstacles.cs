@@ -21,7 +21,7 @@ public class GenerateObstacles : MonoBehaviour
         float triggerTime = Random.Range(1, 10);
         float objectNum = Random.Range(1, 3);
 
-        if (timeElapsed >= triggerTime && gameTimeElapsed <= 10)
+        if (timeElapsed >= triggerTime && gameTimeElapsed <= 30)
         {
             if (objectNum == 1)
             {

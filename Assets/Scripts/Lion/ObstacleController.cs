@@ -23,11 +23,6 @@ public class ObstacleController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "redSquare")
-        {
-            Destroy(gameObject);
-        }
-
         if (collision.gameObject.name == "LionSprite")
         {
             SceneManager.LoadScene("Level4");

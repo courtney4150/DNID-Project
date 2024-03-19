@@ -15,7 +15,7 @@ public class FinishLineController : MonoBehaviour
     void Update()
     {
         Vector3 pos = Camera.main.WorldToViewportPoint(transform.position);
-        if (gameTimeElapsed >= 10)
+        if (gameTimeElapsed >= 30)
         {
             x = gameObject.transform.position.x - (speed * Time.deltaTime);
             y = gameObject.transform.position.y;
