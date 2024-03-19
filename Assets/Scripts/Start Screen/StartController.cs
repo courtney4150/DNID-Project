@@ -7,7 +7,7 @@ public class StartController : MonoBehaviour
 {
     public void OnButtonPress()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("DorothyRules");
     }
 
 

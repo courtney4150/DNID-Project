@@ -15,10 +15,10 @@ public class TornadoController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(gameObject.transform.position.x < -9 || gameObject.transform.position.x > 9)
-        {
-            direction *= -1;
-        }
+        // if(gameObject.transform.position.x < -9 || gameObject.transform.position.x > 9)
+        // {
+        //     direction *= -1;
+        // }
 
         x = gameObject.transform.position.x + direction * (speed * Time.deltaTime);
         y = gameObject.transform.position.y;
@@ -47,6 +47,22 @@ public class TornadoController : MonoBehaviour
             }
 
             timeElapsed = 0;
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.name == "RightCollider")
+        {
+            
+            direction *= -1;
+        
+        }
+
+        if (collision.gameObject.name == "LeftCollider")
+        {
+            Debug.Log("Collided!");
+            direction *= -1;
         }
     }
 }
