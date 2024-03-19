@@ -21,7 +21,6 @@ public class LionController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-
             rb.AddForce(Vector2.up * 26.6581f, ForceMode2D.Impulse);
 
         }
