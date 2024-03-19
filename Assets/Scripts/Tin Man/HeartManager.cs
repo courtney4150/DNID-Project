@@ -12,7 +12,7 @@ public class HeartManager : MonoBehaviour
 
     void Update()
     {
-        heartText.text = "Hearts Collected: " + heartCount.ToString();
+        heartText.text = "Hearts Collected: " + heartCount.ToString() +"/15";
 
         if (heartCount >= 15)
         {
