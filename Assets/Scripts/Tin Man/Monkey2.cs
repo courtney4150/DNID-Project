@@ -11,7 +11,7 @@ public class Monkey2 : MonoBehaviour
 
     void Start()
     {
-        transform.position = new Vector3(Random.Range(-5f, 5f), 10f, 0f);
+        transform.position = new Vector3(Random.Range(-10f, 10f), 10f, 0f);
         float speed = Random.Range(minSpeed, maxSpeed);
         GetComponent<Rigidbody2D>().velocity = Vector2.down * speed;
     }

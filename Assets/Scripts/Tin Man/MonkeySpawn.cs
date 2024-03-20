@@ -9,16 +9,22 @@ public class MonkeySpawn : MonoBehaviour
 
     void Start()
     {
-        InvokeRepeating("SpawnObject", 0f, spawnInterval);
+        StartCoroutine(SpawnObjectsWithDelay());
     }
 
-    void SpawnObject()
+    IEnumerator SpawnObjectsWithDelay()
     {
-        // Randomly select a falling object prefab
-        GameObject prefab = fallingObjectPrefabs[Random.Range(0, fallingObjectPrefabs.Length)];
+        while (true)
+        {
+            // Randomly select a falling object prefab
+            GameObject prefab = fallingObjectPrefabs[Random.Range(0, fallingObjectPrefabs.Length)];
 
-        // Instantiate the selected prefab at the spawn point
-        Instantiate(prefab, transform.position, Quaternion.identity);
+            // Instantiate the selected prefab at the spawn point
+            Instantiate(prefab, transform.position, Quaternion.identity);
+
+            // Wait for the specified spawn interval before spawning the next object
+            yield return new WaitForSeconds(spawnInterval);
+        }
     }
 }
 

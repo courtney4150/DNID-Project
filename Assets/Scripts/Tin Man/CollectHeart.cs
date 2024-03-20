@@ -10,7 +10,7 @@ public class CollectHeart : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision){
         if(collision.gameObject.name == "TinManSprite"){
             gameObject.SetActive(false);
-            hm.heartCount ++;
+            hm.heartCount += 1;
             float respawnDelay = Random.Range(minRespawnDelay, maxRespawnDelay);
             Invoke("RespawnObject", respawnDelay);
         }
