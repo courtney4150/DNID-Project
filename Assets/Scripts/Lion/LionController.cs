@@ -17,7 +17,7 @@ public class LionController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // transform.position += Vector3.right * speed * Time.deltaTime;
+        //transform.position += Vector3.right * speed * Time.deltaTime;
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -26,4 +26,13 @@ public class LionController : MonoBehaviour
         }
     }
 
+
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+
+    //    if (collision.gameObject.name == "ground")
+    //    {
+    //        Debug.Log("lion collided with ground");
+    //    }
+    //}
 }
