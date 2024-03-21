@@ -8,6 +8,8 @@ public class Monkey3 : MonoBehaviour
     public float maxSpeed = 15f;
 
     public TinManController controller;
+    public AudioSource myAudioSource;
+    public AudioClip myAudioClip;
 
     void Start()
     {
@@ -19,6 +21,7 @@ public class Monkey3 : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.name == "TinManSprite"){
+            myAudioSource.PlayOneShot(myAudioClip);
             controller.TakeDamage(1);
             gameObject.SetActive(false);
         }

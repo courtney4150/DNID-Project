@@ -21,7 +21,7 @@ public class GroundController : MonoBehaviour
 
         if (score >= 20)
         {
-            SceneManager.LoadScene("Transition1to2");
+            SceneManager.LoadScene("DorothyWin");
         }
     }
 }

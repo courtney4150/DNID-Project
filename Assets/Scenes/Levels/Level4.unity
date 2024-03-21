@@ -343,7 +343,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -453,7 +453,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f2d626115d4a1427ca1218233e908bb3, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 648bd10bb088945a3aec660ba2fbff7f, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -979,8 +979,8 @@ Transform:
   m_GameObject: {fileID: 1198115948}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.6549, y: -2.5529, z: 0}
-  m_LocalScale: {x: 11.597853, y: 17.12952, z: 1}
+  m_LocalPosition: {x: 15.1172, y: -3.3931, z: 0}
+  m_LocalScale: {x: 8.012957, y: 12.462048, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1351,7 +1351,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  jumpForce: 26.6581
 --- !u!61 &1595401169
 BoxCollider2D:
   m_ObjectHideFlags: 0

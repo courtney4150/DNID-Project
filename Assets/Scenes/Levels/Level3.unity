@@ -187,6 +187,8 @@ MonoBehaviour:
   minRespawnDelay: 3
   maxRespawnDelay: 10
   hm: {fileID: 890136623}
+  myAudioSource: {fileID: 1002663296}
+  myAudioClip: {fileID: 8300000, guid: 15d15aac1a77443e3939ccdd735218e6, type: 3}
 --- !u!58 &13199123
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -452,9 +454,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f2d626115d4a1427ca1218233e908bb3, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 648bd10bb088945a3aec660ba2fbff7f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.495
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -761,6 +763,8 @@ MonoBehaviour:
   minRespawnDelay: 3
   maxRespawnDelay: 10
   hm: {fileID: 890136623}
+  myAudioSource: {fileID: 1002663296}
+  myAudioClip: {fileID: 8300000, guid: 15d15aac1a77443e3939ccdd735218e6, type: 3}
 --- !u!58 &369613097
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -948,6 +952,8 @@ MonoBehaviour:
   minRespawnDelay: 3
   maxRespawnDelay: 10
   hm: {fileID: 890136623}
+  myAudioSource: {fileID: 1002663296}
+  myAudioClip: {fileID: 8300000, guid: 15d15aac1a77443e3939ccdd735218e6, type: 3}
 --- !u!58 &446455132
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1195,6 +1201,8 @@ MonoBehaviour:
   minRespawnDelay: 3
   maxRespawnDelay: 10
   hm: {fileID: 890136623}
+  myAudioSource: {fileID: 1002663296}
+  myAudioClip: {fileID: 8300000, guid: 15d15aac1a77443e3939ccdd735218e6, type: 3}
 --- !u!58 &608136320
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1367,6 +1375,8 @@ MonoBehaviour:
   minRespawnDelay: 3
   maxRespawnDelay: 10
   hm: {fileID: 890136623}
+  myAudioSource: {fileID: 1002663296}
+  myAudioClip: {fileID: 8300000, guid: 15d15aac1a77443e3939ccdd735218e6, type: 3}
 --- !u!58 &714779870
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1617,6 +1627,8 @@ MonoBehaviour:
   minRespawnDelay: 3
   maxRespawnDelay: 10
   hm: {fileID: 890136623}
+  myAudioSource: {fileID: 1002663296}
+  myAudioClip: {fileID: 8300000, guid: 15d15aac1a77443e3939ccdd735218e6, type: 3}
 --- !u!58 &968347158
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1764,7 +1776,7 @@ GameObject:
   - component: {fileID: 1002663297}
   - component: {fileID: 1002663296}
   m_Layer: 0
-  m_Name: Audio Source
+  m_Name: Hit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1780,9 +1792,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_audioClip: {fileID: 8300000, guid: 04b06df0855f44a29a2a10e9e6f1b3d9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2031,6 +2043,8 @@ MonoBehaviour:
   minSpeed: 3
   maxSpeed: 15
   controller: {fileID: 2012472135}
+  myAudioSource: {fileID: 0}
+  myAudioClip: {fileID: 0}
 --- !u!4 &1231980125 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6826896739494435420, guid: 7ade5c1f3ed95419d833f06401bee85e, type: 3}
@@ -2435,13 +2449,13 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6959322737501099029, guid: 2c75b863d50a942fb91b997e226b63d9, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1580479143}
-    - targetCorrespondingSourceObject: {fileID: 6959322737501099029, guid: 2c75b863d50a942fb91b997e226b63d9, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1580479147}
     - targetCorrespondingSourceObject: {fileID: 6959322737501099029, guid: 2c75b863d50a942fb91b997e226b63d9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1580479149}
+    - targetCorrespondingSourceObject: {fileID: 6959322737501099029, guid: 2c75b863d50a942fb91b997e226b63d9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1580479143}
   m_SourcePrefab: {fileID: 100100000, guid: 2c75b863d50a942fb91b997e226b63d9, type: 3}
 --- !u!1 &1417639542
 GameObject:
@@ -2605,13 +2619,13 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6885396139671243705, guid: 7ade5c1f3ed95419d833f06401bee85e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1231980123}
-    - targetCorrespondingSourceObject: {fileID: 6885396139671243705, guid: 7ade5c1f3ed95419d833f06401bee85e, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1231980126}
     - targetCorrespondingSourceObject: {fileID: 6885396139671243705, guid: 7ade5c1f3ed95419d833f06401bee85e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1231980129}
+    - targetCorrespondingSourceObject: {fileID: 6885396139671243705, guid: 7ade5c1f3ed95419d833f06401bee85e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1231980123}
   m_SourcePrefab: {fileID: 100100000, guid: 7ade5c1f3ed95419d833f06401bee85e, type: 3}
 --- !u!1 &1561470956
 GameObject:
@@ -2763,6 +2777,8 @@ MonoBehaviour:
   minSpeed: 3
   maxSpeed: 15
   controller: {fileID: 2012472135}
+  myAudioSource: {fileID: 0}
+  myAudioClip: {fileID: 0}
 --- !u!4 &1575199355 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3477718093742477475, guid: 463b2fa282579478daa12868fecad6d5, type: 3}
@@ -2943,6 +2959,8 @@ MonoBehaviour:
   minSpeed: 3
   maxSpeed: 15
   controller: {fileID: 2012472135}
+  myAudioSource: {fileID: 0}
+  myAudioClip: {fileID: 0}
 --- !u!4 &1580479145 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 876087751018077980, guid: 2c75b863d50a942fb91b997e226b63d9, type: 3}
@@ -3218,6 +3236,8 @@ MonoBehaviour:
   minRespawnDelay: 3
   maxRespawnDelay: 10
   hm: {fileID: 890136623}
+  myAudioSource: {fileID: 1002663296}
+  myAudioClip: {fileID: 8300000, guid: 15d15aac1a77443e3939ccdd735218e6, type: 3}
 --- !u!58 &1633261942
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3524,6 +3544,8 @@ MonoBehaviour:
   minRespawnDelay: 3
   maxRespawnDelay: 10
   hm: {fileID: 890136623}
+  myAudioSource: {fileID: 1002663296}
+  myAudioClip: {fileID: 8300000, guid: 15d15aac1a77443e3939ccdd735218e6, type: 3}
 --- !u!58 &1712919800
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3696,6 +3718,8 @@ MonoBehaviour:
   minRespawnDelay: 3
   maxRespawnDelay: 10
   hm: {fileID: 890136623}
+  myAudioSource: {fileID: 1002663296}
+  myAudioClip: {fileID: 8300000, guid: 15d15aac1a77443e3939ccdd735218e6, type: 3}
 --- !u!58 &1737372694
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3939,13 +3963,13 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 117761982158011757, guid: 463b2fa282579478daa12868fecad6d5, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1575199353}
-    - targetCorrespondingSourceObject: {fileID: 117761982158011757, guid: 463b2fa282579478daa12868fecad6d5, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1575199357}
     - targetCorrespondingSourceObject: {fileID: 117761982158011757, guid: 463b2fa282579478daa12868fecad6d5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1575199359}
+    - targetCorrespondingSourceObject: {fileID: 117761982158011757, guid: 463b2fa282579478daa12868fecad6d5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1575199353}
   m_SourcePrefab: {fileID: 100100000, guid: 463b2fa282579478daa12868fecad6d5, type: 3}
 --- !u!1 &1870099931
 GameObject:
@@ -4141,6 +4165,8 @@ MonoBehaviour:
   minRespawnDelay: 3
   maxRespawnDelay: 10
   hm: {fileID: 890136623}
+  myAudioSource: {fileID: 1002663296}
+  myAudioClip: {fileID: 8300000, guid: 15d15aac1a77443e3939ccdd735218e6, type: 3}
 --- !u!58 &1988970629
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4387,6 +4413,8 @@ MonoBehaviour:
   minRespawnDelay: 3
   maxRespawnDelay: 10
   hm: {fileID: 890136623}
+  myAudioSource: {fileID: 1002663296}
+  myAudioClip: {fileID: 8300000, guid: 15d15aac1a77443e3939ccdd735218e6, type: 3}
 --- !u!114 &1993347100
 MonoBehaviour:
   m_ObjectHideFlags: 0

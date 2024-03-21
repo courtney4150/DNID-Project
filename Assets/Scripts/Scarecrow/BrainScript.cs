@@ -6,6 +6,8 @@ using UnityEngine;
 public class BrainScript : MonoBehaviour
 {
     public bool collected = false;
+    public AudioSource myAudioSource;
+    public AudioClip myAudioClip;
 
     // Reset the brain sprite to its initial position
     public void ResetBrain()
@@ -39,6 +41,7 @@ public class BrainScript : MonoBehaviour
         //Debug.Log("in KeyCont: hit " + gameObject.name);
         if (other.CompareTag("ScareCrow"))
         {
+            myAudioSource.PlayOneShot(myAudioClip);
             CollectBrain();
         }
     }
