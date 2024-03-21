@@ -64,7 +64,7 @@ public class MovePlayer : MonoBehaviour
 
         if (collision.gameObject.name == "DorothySprite" && brainManagerRef.numBrainsCollected == 15)
         {
-            SceneManager.LoadScene("Transition2to3");
+            SceneManager.LoadScene("ScarecrowWin");
             //Debug.Log("scene transition");
         }
     }

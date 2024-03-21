@@ -16,7 +16,7 @@ public class HeartManager : MonoBehaviour
 
         if (heartCount >= 15)
         {
-            SceneManager.LoadScene("Transition3to4");
+            SceneManager.LoadScene("TinManWin");
         }
     }
 

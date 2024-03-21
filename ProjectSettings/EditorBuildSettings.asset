@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/Level1.unity
     guid: 713722355b50245de8004882440fb3a3
   - enabled: 1
+    path: Assets/Scenes/Wins/DorothyWin.unity
+    guid: c72727ed02c074a9e9d7dad1a69f1b91
+  - enabled: 1
     path: Assets/Scenes/Transitions/Transition1to2.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -41,4 +44,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Start.End/end.unity
     guid: d5ad5b37411954f439cc32ff8c14a9ac
+  - enabled: 1
+    path: Assets/Scenes/Wins/LionWin.unity
+    guid: f6331befe4cdf4d349b9c5dd164cd95c
+  - enabled: 1
+    path: Assets/Scenes/Wins/ScarecrowWin.unity
+    guid: 70eeddfda861f4f9eacf40dc34519561
+  - enabled: 1
+    path: Assets/Scenes/Wins/TinManWin.unity
+    guid: b8d52d99d47c34e3ca97d752df96219d
   m_configObjects: {}
