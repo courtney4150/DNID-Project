@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class LionDialogue : MonoBehaviour
 {
@@ -32,11 +33,16 @@ public class LionDialogue : MonoBehaviour
 
     public void ContinueDialogue()
     {
+        Debug.Log("test");
         if(lionIndex < lionSentences.Length - 1)
         {
             lionIndex++;
             lionDialogue.text = string.Empty;
             StartCoroutine(TypeLionDialogue());
+        }
+        else
+        {
+            SceneManager.LoadScene("Level4");
         }
     }
 

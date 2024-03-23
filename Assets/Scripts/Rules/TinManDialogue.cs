@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class TinManDialogue : MonoBehaviour
 {
@@ -37,6 +38,10 @@ public class TinManDialogue : MonoBehaviour
             tinManIndex++;
             tinManDialogue.text = string.Empty;
             StartCoroutine(TypeTinManDialogue());
+        }
+        else
+        {
+            SceneManager.LoadScene("Level3");
         }
     }
 

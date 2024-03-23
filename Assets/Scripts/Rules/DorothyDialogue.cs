@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class DorothyDialogue : MonoBehaviour
 {
@@ -37,6 +38,10 @@ public class DorothyDialogue : MonoBehaviour
             dorothyIndex++;
             dorothyDialogue.text = string.Empty;
             StartCoroutine(TypeDorothyDialogue());
+        }
+        else
+        {
+            SceneManager.LoadScene("Level1");
         }
     }
 }
