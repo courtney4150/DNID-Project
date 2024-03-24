@@ -53,7 +53,7 @@ public class Level3to4Controller: MonoBehaviour
     {
         if (collision.gameObject.name == "Level4Icon")
         {
-            SceneManager.LoadScene("Level4");
+            SceneManager.LoadScene("LionRules");
         }
     }
 

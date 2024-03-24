@@ -53,4 +53,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Wins/TinManWin.unity
     guid: b8d52d99d47c34e3ca97d752df96219d
+  - enabled: 1
+    path: Assets/Scenes/Rules/LionRules.unity
+    guid: b02e0c641e1fe413b86597151f7c8557
+  - enabled: 1
+    path: Assets/Scenes/Rules/ScareCrow.unity
+    guid: 4d19abe8341e2498f8d5bc5a5c1751da
   m_configObjects: {}

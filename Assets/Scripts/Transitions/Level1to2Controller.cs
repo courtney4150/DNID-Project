@@ -53,7 +53,7 @@ public class Level1to2Controller: MonoBehaviour
     {
         if (collision.gameObject.name == "Level2Icon")
         {
-            SceneManager.LoadScene("Level2");
+            SceneManager.LoadScene("ScareCrow");
         }
     }
 
