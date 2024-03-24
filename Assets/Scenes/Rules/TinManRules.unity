@@ -1991,8 +1991,8 @@ MonoBehaviour:
   - Hey there!
   - I need some help!
   - Do you think you could help me collect my hearts the Wicked Witch's flying henchmen
-    stole from me?
-  - 'Use the arrow keys to jump up and move left to right. '
+    stole?
+  - 'Use the arrow keys to jump and move left to right. '
   - Oh, and make sure to avoid the flying monkeys, that will hurt!
   continueButton: {fileID: 171385499}
   tinManIndex: 0

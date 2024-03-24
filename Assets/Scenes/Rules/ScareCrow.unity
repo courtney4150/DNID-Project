@@ -775,9 +775,9 @@ MonoBehaviour:
   typingSpeed: 0.05
   scarecrowDialogue2: {fileID: 1095276453}
   ScarecrowSentences:
-  - Why hello!
-  - 'I lost my brains while protecting the crops, but I cant seem to find where they
-    are. '
+  - Hello!
+  - 'I lost my brains while protecting the crops, but I can''t seem to find where
+    they are. '
   - 'Help me find them by using the arrow keys to navigate the maze. '
   - Dont forget, you must collect all of the brains to leave the maze!
   continueButton: {fileID: 162463231}

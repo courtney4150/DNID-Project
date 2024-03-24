@@ -106,7 +106,6 @@ public class BrainManager : MonoBehaviour
 
 
         numBrainsCollected = totalBrainsCollected.Distinct().Count();
-        //Debug.Log(numBrainsCollected);
         brainCountText.SetText("Brains collected: " + numBrainsCollected + "/15");
 
    

@@ -9,9 +9,7 @@ public class DorothyController : MonoBehaviour
     public float speed;
     private Vector2 newPos;
     private float x, y;
-    
 
-    // Update is called once per frame
     void Update()
     {
         Vector3 pos = Camera.main.WorldToViewportPoint(transform.position);

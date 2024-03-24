@@ -334,12 +334,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 763142263}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0004, y: 0.1361, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.9528916, y: -1.5203846, z: 0}
   m_LocalScale: {x: 1.4265018, y: 1.4655473, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1876198946}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &816908208
 GameObject:
@@ -352,7 +352,7 @@ GameObject:
   - component: {fileID: 816908211}
   - component: {fileID: 816908210}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Dialogue Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -373,10 +373,9 @@ MonoBehaviour:
   typingSpeed: 0.05
   dorothyDialogue: {fileID: 601416115}
   DorothySentences:
-  - OH NO!!
+  - Oh no!!
   - There is a tornado coming right for us!
-  - Help me avoid the falling objects by moving using the arrow keys to move left
-    and right.
+  - Help me avoid the falling objects by using the arrow keys to move left and right.
   - Try not to get hit or you wont get any points!!
   continueButton: {fileID: 2138081157}
   dorothyIndex: 0
@@ -1106,12 +1105,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1516365868}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12, y: -3.99, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -8.046708, y: -5.6464844, z: 0}
   m_LocalScale: {x: 0.8501, y: 0.8501, z: 0.8501}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1876198946}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1516365872
 BoxCollider2D:
@@ -1384,6 +1383,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1876198945
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1876198946}
+  m_Layer: 0
+  m_Name: Sprites
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1876198946
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876198945}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.9532917, y: 1.6564846, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1516365871}
+  - {fileID: 763142265}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2006626864
 GameObject:
   m_ObjectHideFlags: 0
@@ -1650,10 +1682,9 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1813760224}
-  - {fileID: 763142265}
-  - {fileID: 1516365871}
   - {fileID: 1420090025}
+  - {fileID: 863806909}
   - {fileID: 1172867140}
   - {fileID: 816908211}
-  - {fileID: 863806909}
   - {fileID: 2006626866}
+  - {fileID: 1876198946}

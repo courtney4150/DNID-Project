@@ -43,29 +43,13 @@ public class MovePlayer : MonoBehaviour
 
     }
 
-    //private void OnTriggerEnter2D(Collider2D other)
-    //{
-    //    if (other.tag == "key")
-    //    {
-    //        havekey = "y";
-    //    }
-    //}
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        //Makes player restart if they hit the collider
-        // if (collision.gameObject.CompareTag("Maze"))
-        // {
-        //     StartCoroutine(TeleportToStartingPosition());
-        // }
-
-        //Debug.Log(collision.gameObject.name);
-
 
         if (collision.gameObject.name == "DorothySprite" && brainManagerRef.numBrainsCollected == 15)
         {
             SceneManager.LoadScene("ScarecrowWin");
-            //Debug.Log("scene transition");
         }
     }
 

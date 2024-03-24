@@ -21,7 +21,6 @@ public class BrainScript : MonoBehaviour
     {
         collected = true;
         gameObject.SetActive(false); // Deactivate the brain sprite
-        //Debug.Log("collected brain in KeyCont.cs");
     }
 
     // Check if the brain sprite has been collected
@@ -38,7 +37,6 @@ public class BrainScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        //Debug.Log("in KeyCont: hit " + gameObject.name);
         if (other.CompareTag("ScareCrow"))
         {
             myAudioSource.PlayOneShot(myAudioClip);

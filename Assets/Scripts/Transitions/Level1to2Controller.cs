@@ -32,7 +32,6 @@ public class Level1to2Controller: MonoBehaviour
 
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            Debug.Log("up key pressed");
             x = gameObject.transform.position.x;
             y = gameObject.transform.position.y + (speed * Time.deltaTime);
             newPos = new Vector2(x, y);

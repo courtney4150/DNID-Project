@@ -33,7 +33,6 @@ public class LionDialogue : MonoBehaviour
 
     public void ContinueDialogue()
     {
-        Debug.Log("test");
         if(lionIndex < lionSentences.Length - 1)
         {
             lionIndex++;
